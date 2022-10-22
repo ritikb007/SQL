@@ -1,0 +1,7 @@
+SELECT 
+tblAuthor.AuthorName, tblEpisode.EpisodeType, tblEpisode.Title
+FROM tblAuthor
+INNER JOIN tblEpisode
+ON tblAuthor.AuthorId = tblEpisode.AuthorId
+WHERE EpisodeType != 'Normal episode'
+ORDER BY EpisodeType;
